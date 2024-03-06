@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Hackathon3
+from .models import Post
 # Register your models here.
 
-admin.site.register(Hackathon3)
+admin.site.register(Post)
