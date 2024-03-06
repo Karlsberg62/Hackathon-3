@@ -1,4 +1,3 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
 
 # College Connect (The Wombles)
@@ -121,3 +120,4 @@ Thank you for the team effort to:
 * 
 
 Happy coding!
+
