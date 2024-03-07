@@ -2,7 +2,42 @@
 {% load static %}
 
 {% block content %}
+<div class="container pt-3">
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="static/media/images/home-arts.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="static/media/images/home-crafts.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="static/media/images/home-football.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="static/media/images/home-rugby.png" class="d-block w-100" alt="...">
+            </div>
 
-<!-- <h2> This is the index file </h2> -->
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="container text-center pt-3">
+    <h1>Welcome to College Connect</h1>    
+    <p class="pt-3"> Discover opportunities to engage, connect, and thrive within our vibrant campus community. Whether you're eager
+        to explore new interests, deepen your passions, or simply connect with like-minded individuals, this is your
+        gateway to it all. Join dynamic student clubs and organizations spanning a wide array of interests, from
+        academic pursuits to cultural celebrations and everything in between. With easy registration and seamless
+        communication, find your tribe!</p>
+    </div>    
+</div>
+
+
 
 {% endblock %}
