@@ -28,6 +28,22 @@ class make_event(LoginRequiredMixin, CreateView):
         return super().form_valid(form)
         # form.instance.user = self.request.user        
         # return super(make_event, self).form_valid(form)
+
+class update_event(LoginRequiredMixin,UserPassesTestMixin,UpdateView):
+    template_name = 'hackathon3/update_event.html'
+    model = Post
+    form_class = EventForm
+    success_url = '/post/'
+    def form_valid(self, form):
+        form.instance.author = self.request.user
+        return super().form_valid(form)
+    
+    def test_func(self):
+        post = self.get_object()
+        if self.request.user == post.author:
+            return True
+        return False
+
     
 
 class PostList(generic.ListView):
