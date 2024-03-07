@@ -1,6 +1,6 @@
 from django import forms
 from django.forms import ModelForm
-from .models import Post
+from .models import Post, Comment
 
 
 
@@ -41,3 +41,8 @@ class EventForm(forms.ModelForm):
             if commit:
                 instance.save()
             return instance
+
+class CommentForm(forms.ModelForm):
+    class Meta:
+        model = Comment
+        fields = ('body',)
