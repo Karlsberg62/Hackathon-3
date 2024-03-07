@@ -59,7 +59,17 @@ While some variations can be visible in end product, we believe planning helped 
 
 ### **Wireframes**
 
-For this project, we made wireframes to help with planning and design. While some changes were made as we went along and ideas were added to our project, original wireframes can be found below:
+For this project, we made wireframes to help with planning and design. While some changes were made as we went along and ideas were added to our project, original wireframes can be found below
+
+![Home Page](https://karlsberg62-hackathon3-pxzbqea78wg.ws-eu108.gitpod.io/static/media/images/Home.png)
+
+![Event](https://karlsberg62-hackathon3-pxzbqea78wg.ws-eu108.gitpod.io/static/media/images/Event.png)
+
+![Events](https://karlsberg62-hackathon3-pxzbqea78wg.ws-eu108.gitpod.io/static/media/images/Events.png)
+
+![Clubs](https://karlsberg62-hackathon3-pxzbqea78wg.ws-eu108.gitpod.io/static/media/images/Clubs.png)
+
+![Profile](https://karlsberg62-hackathon3-pxzbqea78wg.ws-eu108.gitpod.io/static/media/images/Profile.png)
 
 ## **Technologies Used**
 
