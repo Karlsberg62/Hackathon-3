@@ -35,7 +35,7 @@
                 {% if user.is_authenticated and post.author == user %}
                     
                 
-                    <a href="" class="btn btn-delete btn-primary">Update</a>
+                    <a href="{% url 'update_event' post.slug %}" class="btn btn-delete btn-primary">Update</a>
                     <a href="" class="btn btn-delete btn-danger">Delete</a>
                     {% endif %}
             </div>
