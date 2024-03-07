@@ -83,29 +83,4 @@ def post_detail(request, slug):
         return posts
     """
 
-def post_detail(request, slug):
-    """
-    Display an individual :model:`blog.Post`.
-    **Context**
-    ``post``
-        An instance of :model:`blog.Post`.
-     ``comments``
-        All approved comments related to the post.
-    ``comment_count``
-        A count of approved comments related to the post.
-    ``comment_form``
-        An instance of :form:`blog.CommentForm`
-    **Template:**
-    :template:`blog/post_detail.html`
-    """
-    queryset = Post.objects.filter(status=1)
-    # this is a shortcut to get data or raise a https404error # same as render being a shortcut to load data to a templ and return it.
-    post = get_object_or_404(queryset, slug=slug)
 
-    return render(
-        request,
-        "hackathon3/post_detail.html",
-        {
-            "post": post,
-        },
-    )
