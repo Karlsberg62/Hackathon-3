@@ -3,28 +3,37 @@
 
 {% block content %}
 
-<div class="container">
-    <div class="event-info mt-3 p-1">
-        <div class="event-img">
-            <img src="{{ post.image.url }}" alt="{{ post.image_alt }}" class="event-pic">
-        </div>
-        <div class="event-detail">
-            <h1 class="text-center ">{{ post.title }}</h1>
-            <p class="text-center ">Posted by {{ post.user }} on {{ post.created_on }}</p>
-            <hr>
-            <p>{{ post.categories }}</p>
-            <p>{{ post.excerpt }}</p>
-            <p>{{ post.description }}</p>
-            {% if request.user == post.user %}
-            <!--
-            <div class="text-center">
-                <a href="{% url 'edit_recipe' recipe.id %}" class="btn btn-primary w-25 ">Edit</a>
-                <a href="{% url 'delete_recipe' recipe.id %}" class="btn btn-primary w-25 ">Delete</a>
+
+
+<div class="masthead">
+    <div class="container">
+        <div class="row g-0">
+            <div class="col-md-6 masthead-text">
+                <!-- Post title goes in these h1 tags -->
+                <h1 class="post-title">{{ post.title }}</h1>
+                <!-- Post author goes before the | the post's created date goes after -->
+                <p class="post-subtitle">{{ post.author }} | {{ post.created_on }}</p>
             </div>
-            -->
-            {% endif %}
+          
         </div>
     </div>
 </div>
+
+<div class="container">
+    <div class="row">
+        <div class="col card mb-4  mt-3 left  top">
+            <div class="card-body">
+                <!-- The post content goes inside the card-text. -->
+                <!-- Use the | safe filter inside the template tags -->
+                <article class="card-text">
+                    {{ post.description | safe }}
+                </article>
+            </div>
+        </div>
+    </div>
+
+
+
+
 
 {% endblock %}
