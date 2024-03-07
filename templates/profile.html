@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>College Connect</title>
+        <link rel="stylesheet" href="style.css?v=1.1"> 
+        <!-- Add the query string for versioning -->
+        <style>
+            /* FONT */
+            .exo-title-bold {
+                font-family: "Exo", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 700;
+                font-style: normal;
+            }
+    
+            /* Background Colours */
+            .bg-offwhite {
+                background-color: red; /* Updated color */
+            }
+    
+            .bg-blue1 {
+                background-color: #61bffa;
+            }
+    
+            .bg-blue2 {
+                background-color: #06243e;
+            }
+    
+            /* LOGO */
+            .logo {
+                width: 80px;
+                height: 80px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <style>
+            /* Center buttons horizontally and vertically */
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+            }
+            /* Style for buttons */
+            .button {
+                display: block;
+                width: 200px;
+                height: 50px;
+                margin: 10px;
+                background-color: #04AA6D;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                font-size: 16px;
+                cursor: pointer;
+            }
+        </style>
+    </head>   
+<body>
+    <div class="navbar">
+        <a href="#">Home</a> |
+        <a href="#">Events</a> |
+        <a href="#">Clubs</a> |
+        <a href="#">Profile</a> |
+        <a href="#">Logout</a>
+        <input type="text" placeholder="Search...">
+        <button class="button">Profile Picture</button>
+        <button class="button">Add Event</button>
+        <button class="button">Liked Events</button>
+        <button class="button">Your Comments</button>
+        <button class="button">Your Event</button>
+        <button class="button">Liked Clubs</button>
+</body>
+<footer class="footer mt-auto py-3 bg-blue2 bottom full width">
+    <p class="m-0 text-center text-white" "Made by Code Instituters">
+    </p>
+    <p class="m-0 text-center text-white">
+        <i class="fab fa-facebook-square ms-3"></i>
+        <i class="fab fa-twitter-square ms-3"></i>
+        <i class="fab fa-instagram-square ms-3"></i>
+        <i class="fab fa-youtube-square ms-3"></i>    
+    </p>
+    <p class="m-0 text-center text-white">
+        <link rel="stylesheet" href="#"><i class="fa-brands fa-github mt-3 ms-3"></i>
+        <link rel="stylesheet" href="#"><i class="fa-brands fa-github ms-3" ></i>
+        <link rel="stylesheet" href="#"><i class="fa-brands fa-github ms-3"></i>
+        <link rel="stylesheet" href="#"><i class="fa-brands fa-github ms-3"></i>
+    </p>  
+</footer>
+</html>
