@@ -1,7 +1,15 @@
+from django.views.generic import (
+    CreateView, ListView, 
+    DetailView, DeleteView,
+    UpdateView
+)
+
 from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic
 from django.db.models import Q
+from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from .models import Post
+from .forms import EventForm
 
 # Create your views here.
 def index(request):
@@ -9,6 +17,18 @@ def index(request):
 
 def profile(request):
     return render(request,'hackathon3/profile.html')
+
+class make_event(LoginRequiredMixin, CreateView):
+    template_name = 'hackathon3/make_event.html'
+    model = Post
+    form_class = EventForm
+    success_url = '/post/'
+    def form_valid(self, form):
+        form.instance.author = self.request.user
+        return super().form_valid(form)
+        # form.instance.user = self.request.user        
+        # return super(make_event, self).form_valid(form)
+    
 
 class PostList(generic.ListView):
     """
