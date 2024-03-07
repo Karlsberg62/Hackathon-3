@@ -1,19 +1,33 @@
-
-
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Exo:wght@700&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,500;1,700;1,900&display=swap');
 /* FONT */
-
-
 .exo-title-bold {
+    font-family: "Exo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+h1 {
     font-family: "Exo", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
 }
 
+
+p {
+    font-family: "Exo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
 /* Background Colours */
 
 .bg-offwhite {
-    background-color:red;
+    background-color: red;
 }
 
 .bg-blue1 {
@@ -35,3 +49,17 @@
 }
 
 
+/* CAROUSEL */
+
+/* Carousel Items/Images */
+.carousel .carousel-item {
+    height: 400px;
+}
+
+.carousel-item img {
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    min-height: 400px;
+}
