@@ -1,12 +1,12 @@
 {% extends "base.html" %}
 {% block title %}Delete Event{% endblock %}
 {% block content %}
-<div class="container">
+<div class="container text-center">
     <form method="POST" enctype="multipart/form-data" class="p-2 form">
         <h1 class="text-center">Delete Event</h1>
         {% csrf_token %}
         <h2>Are You Sure You Want To Delete The Post "{{object.title }}"</h2>
-        <div class="text-center">
+        <div>
             <button type="submit" class="btn btn-outline-danger mt-2">Yes, Delete</button>
             <a href="#"  class="btn btn-danger mt-2">No, Cancel</button>
         </div>
