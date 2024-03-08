@@ -145,6 +145,15 @@ The font size will be adjusted to fit within the circular
 
 ## **Testing**
 
+![alt text](image.png)
+
+Testing carried out on Chrome, Opera & Edge. 
+Testing carried out via Chrome dev tools with all devices for responsiveness.
+
+![alt text](image-1.png)
+
+![alt text](image-2.png)
+
 ## **Credits**
 Thank you for the team effort to:
 - Karlos https://github.com/Karlsberg62/Hackathon-3
