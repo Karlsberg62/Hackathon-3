@@ -1,16 +1,27 @@
 {% extends 'base.html' %}
 {% load static %}
-
 {% block content %}
 
 <body>
-    <div class="navbar">
-        <button class="button btn-bt-success">Profile Picture</button>
-        <button class="button btn-bt-success">Add Event</button>
-        <button class="button btn-bt-success">Liked Events</button>
-        <button class="button btn-bt-success">Your Comments</button>
-        <button class="button btn-bt-success">Your Event</button>
-        <button class="button btn-bt-success">Liked Clubs</button>
+    <div class="container">
+        <div class="row justify-content-center text-center">
+            <div class="col-md-6">
+                <div class="btn-group btn-group-lg">
+                    <button class="btn btn-bt-primary">Profile Picture</button>
+                    <button class="btn btn-bt-success">Add Event</button>
+                    <button class="btn btn-bt-success">Liked Events</button>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-3 text-center">
+            <div class="col-md-6">
+                <div class="btn-group btn-group-lg">
+                    <button class="btn btn-bt-success">Your Comments</button>
+                    <button class="btn btn-bt-success">Your Event</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 {% endblock %}
