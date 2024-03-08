@@ -45,20 +45,23 @@ class update_event(LoginRequiredMixin,UserPassesTestMixin,UpdateView):
             return True
         return False
 
-# class delete_event(LoginRequiredMixin,UserPassesTestMixin,DeleteView):
-#     template_name = 'hackathon3/post_confirm_delete.html'
-#     # model = Post
-#     # form_class = EventForm
-#     success_url = '/post/'
-#     # def form_valid(self, form):
-#     #     form.instance.author = self.request.user
-#     #     return super().form_valid(form)
+class delete_event(LoginRequiredMixin,UserPassesTestMixin,DeleteView):
+    # template_name = 'hackathon3/post_confirm_delete.html'
+    model = Post
+    # form_class = EventForm
+    success_url = '/post/'
+    # def form_valid(self, form):
+    #     form.instance.author = self.request.user
+    #     return super().form_valid(form)
     
-#     def test_func(self):
-#         post = self.get_object()
-#         if self.request.user == post.author:
-#             return True
-#         return False
+    def test_func(self):
+        return self.request.user == self.get_object().author
+         
+
+        # post = self.get_object()
+        # if self.request.user == post.author:
+        #     return True
+        # return False
 
     
 
@@ -133,22 +136,22 @@ def post_detail(request, slug):
         }
     )    
 
-    """
+    
     #searchbar functionality
-    def get_queryset(self, **kwargs):
-        query = self.request.GET.get('q')
-        if query:
-            posts = self.model.objects.filter(
-                Q(title__icontains=query) |
-                Q(description__icontains=query) |
-                Q(location__icontains=query) |
-                Q(date__icontains=query) |
-                Q(category__icontains=query) |
-                Q(excerpt__icontains=query)
-            )
-        else:
-            posts = self.model.objects.all()
-        return posts
-    """
+    # def get_queryset(self, **kwargs):
+    #     query = self.request.GET.get('q')
+    #     if query:
+    #         posts = self.model.objects.filter(
+    #             Q(title__icontains=query) |
+    #             Q(description__icontains=query) |
+    #             Q(location__icontains=query) |
+    #             Q(date__icontains=query) |
+    #             Q(category__icontains=query) |
+    #             Q(excerpt__icontains=query)
+    #         )
+    #     else:
+    #         posts = self.model.objects.all()
+    #     return posts
+    
 
 
