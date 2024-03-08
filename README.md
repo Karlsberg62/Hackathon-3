@@ -86,15 +86,31 @@ While some variations can be visible in end product, we believe planning helped 
 
 For this project, we made wireframes to help with planning and design. While some changes were made as we went along and ideas were added to our project, original wireframes can be found below
 
-![Home Page](https://karlsberg62-hackathon3-pxzbqea78wg.ws-eu108.gitpod.io/static/media/images/Home.png)
+- Home Page Wireframe
+  <div align="center">
+  <img src="https://karlsberg62/hackathon3/Documentation/images/Home.png" alt="Home Page wireframe">
+</div>
 
-![Event](https://karlsberg62-hackathon3-pxzbqea78wg.ws-eu108.gitpod.io/static/media/images/Event.png)
+- Events Page Wireframe
+  <div align="center">
+  <img src="https://karlsberg62/hackathon3/Documentation/images/Events.png" alt="Events Page wireframe">
+</div>
 
-![Events](https://karlsberg62-hackathon3-pxzbqea78wg.ws-eu108.gitpod.io/static/media/images/Events.png)
+ - Event Page Wireframe
+  <div align="center">
+  <img src="https://karlsberg62/hackathon3/Documentation/images/Event.png" alt="Event Page wireframe">
+</div>
 
-![Clubs](https://karlsberg62-hackathon3-pxzbqea78wg.ws-eu108.gitpod.io/static/media/images/Clubs.png)
+- Clubs Page Wireframe
+  <div align="center">
+  <img src="https://karlsberg62/hackathon3/Documentation/images/Clubs.png" alt="Clubs Page wireframe">
+</div>
 
-![Profile](https://karlsberg62-hackathon3-pxzbqea78wg.ws-eu108.gitpod.io/static/media/images/Profile.png)
+- Profile Page Wireframe 
+<div align="center">
+  <img src="https://karlsberg62/hackathon3/Documentation/images/Profile.png" alt="Profile Page wireframe">
+</div>
+
 
 ## **Technologies Used**
 
