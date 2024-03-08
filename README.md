@@ -140,34 +140,6 @@ For this project, we made wireframes to help with planning and design. While som
 -Exo Extra Bold
 -Open Sans Serif
 
-### **Wireframes**
-
-For this project, we made wireframes to help with planning and design. While some changes were made as we went along and ideas were added to our project, original wireframes can be found below
-
-- Home Page Wireframe
-  <div align="center">
-  <img src="https://karlsberg62/hackathon3/Documentation/images/Home.png" alt="Home Page wireframe">
-</div>
-
-- Events Page Wireframe
-  <div align="center">
-  <img src="https://karlsberg62/hackathon3/Documentation/images/Events.png" alt="Events Page wireframe">
-</div>
-
- - Event Page Wireframe
-  <div align="center">
-  <img src="https://karlsberg62/hackathon3/Documentation/images/Event.png" alt="Event Page wireframe">
-</div>
-
-- Clubs Page Wireframe
-  <div align="center">
-  <img src="https://karlsberg62/hackathon3/Documentation/images/Clubs.png" alt="Clubs Page wireframe">
-</div>
-
-- Profile Page Wireframe 
-<div align="center">
-  <img src="https://karlsberg62/hackathon3/Documentation/images/Profile.png" alt="Profile Page wireframe">
-</div>
 
 ## **Technologies Used**
 
@@ -217,6 +189,15 @@ Use the Exo ExtraBold font for a bold and modern look.
 The font size will be adjusted to fit within the circular
 
 ## **Testing**
+
+![alt text](image.png)
+
+Testing carried out on Chrome, Opera & Edge. 
+Testing carried out via Chrome dev tools with all devices for responsiveness.
+
+![alt text](image-1.png)
+
+![alt text](image-2.png)
 
 ## **Credits**
 Thank you for the team effort to:
