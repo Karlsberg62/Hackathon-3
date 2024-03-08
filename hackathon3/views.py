@@ -48,7 +48,10 @@ class delete_event(LoginRequiredMixin,UserPassesTestMixin,DeleteView):
     success_url = '/post/'
 
     def test_func(self):
-        return self.request.user == self.get_object().author
+        post = self.get_object()
+        if self.request.user == post.author:
+            return True
+        return False
 
 class PostList(generic.ListView):
     queryset = Post.objects.filter(status=1)
