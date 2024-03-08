@@ -30,8 +30,8 @@ SECRET_KEY = 'django-insecure-l7mx5(k9^owfye(pa7=coo%*u7luwplgo_0e3z9u0rdq)fs=-n
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = "DEBUG" in os.environ
 
-ALLOWED_HOSTS = ['.gitpod.io', '.herokuapp.com', 'localhost']
-CSRF_TRUSTED_ORIGINS = ['https://*.gitpod.io', 'https://*.herokuapp.com', 'http://localhost']
+ALLOWED_HOSTS = ['.gitpod.io', '.herokuapp.com']
+CSRF_TRUSTED_ORIGINS = ['https://*.gitpod.io', 'https://*.herokuapp.com']
 
 
 # Application definition
@@ -102,7 +102,7 @@ WSGI_APPLICATION = 'collegeconnect.wsgi.application'
 
 if "DEBUG" in os.environ:
     DATABASES = {
-        'default': {
+            'default': {
             'ENGINE': 'django.db.backends.sqlite3',
             'NAME': BASE_DIR / 'db.sqlite3',
         }
