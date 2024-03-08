@@ -27,8 +27,6 @@ class make_event(LoginRequiredMixin, CreateView):
     def form_valid(self, form):
         form.instance.author = self.request.user
         return super().form_valid(form)
-        # form.instance.user = self.request.user        
-        # return super(make_event, self).form_valid(form)
 
 class update_event(LoginRequiredMixin,UserPassesTestMixin,UpdateView):
     template_name = 'hackathon3/update_event.html'
@@ -46,66 +44,19 @@ class update_event(LoginRequiredMixin,UserPassesTestMixin,UpdateView):
         return False
 
 class delete_event(LoginRequiredMixin,UserPassesTestMixin,DeleteView):
-    # template_name = 'hackathon3/post_confirm_delete.html'
     model = Post
-    # form_class = EventForm
     success_url = '/post/'
-    # def form_valid(self, form):
-    #     form.instance.author = self.request.user
-    #     return super().form_valid(form)
-    
+
     def test_func(self):
         return self.request.user == self.get_object().author
-         
-
-        # post = self.get_object()
-        # if self.request.user == post.author:
-        #     return True
-        # return False
-
-    
 
 class PostList(generic.ListView):
-    """
-    Returns all published posts in :model:`hackathon3.Post`
-    and displays them in a page of six posts. 
-    **Context**
-
-    ``queryset``
-        All published instances of :model:`blog.Post`
-    ``paginate_by``
-        Number of posts per page.
-        
-    **Template:**
-
-    :template:`blog/index.html`
-    """
-    
     queryset = Post.objects.filter(status=1)
     template_name = "hackathon3/post.html"
     paginate_by = 4
 
 
 def post_detail(request, slug):
-    """
-     Display an individual :model:`blog.Post`.
-
-    **Context**
-
-    ``post``
-        An instance of :model:`blog.Post`.
-    ``comments``
-        All approved comments related to the post.
-    ``comment_count``
-        A count of approved comments related to the post.
-    ``comment_form``
-        An instance of :form:`blog.CommentForm`
-
-    **Template:**
-
-    :template:`blog/post_detail.html`
-    """
-
     queryset = Post.objects.filter(status=1)
     post = get_object_or_404(queryset, slug=slug)
     comments = post.comments.all().order_by("-created_on")
@@ -125,7 +76,6 @@ def post_detail(request, slug):
                 'Comment submitted and awaiting approval'
             )
     
-
     return render(
         request,
         "hackathon3/post_detail.html",
@@ -135,23 +85,4 @@ def post_detail(request, slug):
         "comment_form": comment_form,
         }
     )    
-
-    
-    #searchbar functionality
-    # def get_queryset(self, **kwargs):
-    #     query = self.request.GET.get('q')
-    #     if query:
-    #         posts = self.model.objects.filter(
-    #             Q(title__icontains=query) |
-    #             Q(description__icontains=query) |
-    #             Q(location__icontains=query) |
-    #             Q(date__icontains=query) |
-    #             Q(category__icontains=query) |
-    #             Q(excerpt__icontains=query)
-    #         )
-    #     else:
-    #         posts = self.model.objects.all()
-    #     return posts
-    
-
 
