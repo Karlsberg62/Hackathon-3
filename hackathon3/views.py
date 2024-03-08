@@ -45,20 +45,20 @@ class update_event(LoginRequiredMixin,UserPassesTestMixin,UpdateView):
             return True
         return False
 
-class delete_event(LoginRequiredMixin,UserPassesTestMixin,DeleteView):
-    template_name = 'hackathon3/post_confirm_delete.html'
-    # model = Post
-    # form_class = EventForm
-    success_url = '/post/'
-    # def form_valid(self, form):
-    #     form.instance.author = self.request.user
-    #     return super().form_valid(form)
+# class delete_event(LoginRequiredMixin,UserPassesTestMixin,DeleteView):
+#     template_name = 'hackathon3/post_confirm_delete.html'
+#     # model = Post
+#     # form_class = EventForm
+#     success_url = '/post/'
+#     # def form_valid(self, form):
+#     #     form.instance.author = self.request.user
+#     #     return super().form_valid(form)
     
-    def test_func(self):
-        post = self.get_object()
-        if self.request.user == post.author:
-            return True
-        return False
+#     def test_func(self):
+#         post = self.get_object()
+#         if self.request.user == post.author:
+#             return True
+#         return False
 
     
 
@@ -113,6 +113,7 @@ def post_detail(request, slug):
         comment_form = CommentForm(data=request.POST)
         if comment_form.is_valid():
             comment = comment_form.save(commit=False)
+            
             comment.author = request.user
             comment.post = post
             comment.save()
