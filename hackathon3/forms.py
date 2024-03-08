@@ -2,8 +2,6 @@ from django import forms
 from django.forms import ModelForm
 from .models import Post, Comment
 
-
-
 class EventForm(forms.ModelForm):
     """
     Form for adding a recipe
@@ -21,7 +19,6 @@ class EventForm(forms.ModelForm):
             "max_attendees",
             "featured_image",
         ]
-        
         
         labels = {
             "title": "Event Title",

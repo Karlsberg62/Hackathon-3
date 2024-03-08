@@ -8,7 +8,6 @@ class Post(models.Model):
     """
     stores a single event post entry related to the :model:'auth.User'.
     """
-   
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True, blank=True)
     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name='event_posts',null=True)
