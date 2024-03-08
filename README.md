@@ -5,53 +5,6 @@ College Connect is the all-in-one solution for students to engage, connect and t
 College Connect empowers students to make the most out of their college experience while providing event planners with the visibility they need to make their events a success.
 
 
-## Features
-
-### Existing features 
-
-- Navigation Bar
-  - Featured on all pages, the full responsive navigation bar includes links to the Logo and a search bar and is identical in each page to allow for easy navigation.
-    - For users not logged in - Home page, Events, Clubs, Register and Login
-    - For users logged in - Home page, Events, Clubs, Logout and Profile
-  - This section will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button.
-  - This section will also allow the user to search for items
-
-- Footer 
-  - Holds social medias sites which open in new tabs to allow easy navigation
-  - Footer is relevant to the student user encouraging them to keep connect via social media
-
-- Landing Page
-  - Includes a carousel showing the types of events on offer
-  - Clear heading advising users where they are
-  - A short about site information advising users of whats it has to offer
-<!-- maybe insert snip it of our indexpage  -->
-
-- Events Page
-
-- Register Page
-
-- Login Page
-
-
-
-
-### Future features 
-
-## User Stories 
-
-- As a user, I can log in & out  - Must Have 
-- As a user, I can navigate to all pages - Must Have 
-- As a user, I can sign up to an event - Must Have 
-- As a user, I can see all the information for the event - Must Have 
-- As a user, I can sign up to a club - Must Have  
-- As a user, I can see all the information for the club - Must Have 
-- As a user, I receive a notification that I have joined an event/club - Should Have 
-- As a user, I receive a notification that I have made a comment/edited a comment - Should Have
-
-
-
-## Forking the GitHub Repository
-
 ### **Planning Stage**
 The planning was as follows
   1. Select a project.
@@ -69,6 +22,112 @@ While some variations can be visible in end product, we believe planning helped 
 
 #### Objectives
 
+### **Wireframes**
+
+For this project, we made wireframes to help with planning and design. While some changes were made as we went along and ideas were added to our project, original wireframes can be found below
+
+- Home
+
+<img src="/workspace/Hackathon-3/documentation/images/Home.png" style="width:50%;">
+
+- Event
+
+<img src="/workspace/Hackathon-3/documentation/images/Event.png" style="width:50%;">
+
+- Events
+
+<img src="/workspace/Hackathon-3/documentation/images/Events.png" style="width:50%;">
+
+- Clubs 
+
+<img src="/workspace/Hackathon-3/documentation/images/Clubs.png" style="width:50%;">
+
+- Profile
+
+<img src="/workspace/Hackathon-3/documentation/images/Profile.png" style="width:50%;">
+
+
+## User Stories 
+
+- As a user, I can log in & out  - Must Have 
+- As a user, I can navigate to all pages - Must Have 
+- As a user, I can sign up to an event - Must Have 
+- As a user, I can see all the information for the event - Must Have 
+- As a user, I can sign up to a club - Must Have  
+- As a user, I can see all the information for the club - Must Have 
+- As a user, I receive a notification that I have joined an event/club - Should Have 
+- As a user, I receive a notification that I have made a comment/edited a comment - Should Have
+
+
+## Features
+
+### Existing features 
+
+- Navigation Bar
+  - Featured on all pages, the full responsive navigation bar includes links to the Logo and a search bar and is identical in each page to allow for easy navigation.
+    - For users not logged in - Home page, Events, Clubs, Register and Login
+    - For users logged in - Home page, Events, Clubs, Logout and Profile
+  - This section will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button.
+  - This section will also allow the user to search for items
+- Navbar Logged Out
+
+<img src="/workspace/Hackathon-3/documentation/images/feature_navbar_logged_out.png" style="width:50%;">
+
+- Navbar Logged In
+
+<img src="/workspace/Hackathon-3/documentation/images/feature_navbar_logged_in.png" style="width:50%;">
+
+- Footer 
+  - Holds social medias sites which open in new tabs to allow easy navigation
+  - Footer is relevant to the student user encouraging them to keep connect via social media
+  
+<img src="/workspace/Hackathon-3/documentation/images/feature_footer.png" style="width:50%;">
+
+- Landing Page
+  - Includes a carousel showing the types of events on offer
+  - Clear heading advising users where they are
+  - A short about site information advising users of whats it has to offer
+
+<img src="/workspace/Hackathon-3/documentation/images/feature_home_page.png" style="width:50%;">
+
+- Events Page
+
+
+<img src="/workspace/Hackathon-3/documentation/images/feature_events_page.png" style="width:50%;">
+
+- Add Event 
+
+<img src="/workspace/Hackathon-3/documentation/images/feature_add_event.png" style="width:50%;">
+
+- Update Event
+
+<img src="/workspace/Hackathon-3/documentation/images/feature_update_event.png" style="width:50%;">
+
+- Delete Event
+
+<img src="/workspace/Hackathon-3/documentation/images/feature_delete_event.png" style="width:50%;">
+
+- Add Comment 
+
+<img src="/workspace/Hackathon-3/documentation/images/feature_add_comment.png" style="width:50%;">
+
+- Register Page
+
+<img src="/workspace/Hackathon-3/documentation/images/feature_sign_up.png" style="width:50%;">
+
+- Login Page
+
+<img src="/workspace/Hackathon-3/documentation/images/feature_sign_in.png" style="width:50%;">
+
+- Logout Page
+
+<img src="/workspace/Hackathon-3/documentation/images/feature_sign_out.png" style="width:50%;">
+
+
+### Future features 
+
+
+## Forking the GitHub Repository
 
 
 ### Color Pallette
@@ -81,20 +140,6 @@ While some variations can be visible in end product, we believe planning helped 
 -Exo Extra Bold
 -Open Sans Serif
 
-
-### **Wireframes**
-
-For this project, we made wireframes to help with planning and design. While some changes were made as we went along and ideas were added to our project, original wireframes can be found below
-
-![Home Page](https://karlsberg62-hackathon3-pxzbqea78wg.ws-eu108.gitpod.io/static/media/images/Home.png)
-
-![Event](https://karlsberg62-hackathon3-pxzbqea78wg.ws-eu108.gitpod.io/static/media/images/Event.png)
-
-![Events](https://karlsberg62-hackathon3-pxzbqea78wg.ws-eu108.gitpod.io/static/media/images/Events.png)
-
-![Clubs](https://karlsberg62-hackathon3-pxzbqea78wg.ws-eu108.gitpod.io/static/media/images/Clubs.png)
-
-![Profile](https://karlsberg62-hackathon3-pxzbqea78wg.ws-eu108.gitpod.io/static/media/images/Profile.png)
 
 ## **Technologies Used**
 
