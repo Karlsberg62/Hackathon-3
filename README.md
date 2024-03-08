@@ -1,16 +1,43 @@
 
 
 # College Connect (The Wombles)
-Team repo for Bootcamp Hackathon 3
-
-## **Intro**
-
-## **Deployment**
+College Connect is the all-in-one solution for students to engage, connect and thrive within the campus community. The site will be targeted at students eager to attend community events and event planners aiming to promote their initiatives. 
+College Connect empowers students to make the most out of their college experience while providing event planners with the visibility they need to make their events a success.
 
 
 ## Features
 
-### User Stories 
+### Existing features 
+
+- Navigation Bar
+  - Featured on all pages, the full responsive navigation bar includes links to the Logo and a search bar and is identical in each page to allow for easy navigation.
+    - For users not logged in - Home page, Events, Clubs, Register and Login
+    - For users logged in - Home page, Events, Clubs, Logout and Profile
+  - This section will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button.
+  - This section will also allow the user to search for items
+
+- Footer 
+  - Holds social medias sites which open in new tabs to allow easy navigation
+  - Footer is relevant to the student user encouraging them to keep connect via social media
+
+- Landing Page
+  - Includes a carousel showing the types of events on offer
+  - Clear heading advising users where they are
+  - A short about site information advising users of whats it has to offer
+<!-- maybe insert snip it of our indexpage  -->
+
+- Events Page
+
+- Register Page
+
+- Login Page
+
+
+
+
+### Future features 
+
+## User Stories 
 
 - As a user, I can log in & out  - Must Have 
 - As a user, I can navigate to all pages - Must Have 
@@ -23,9 +50,9 @@ Team repo for Bootcamp Hackathon 3
 
 
 
-### Forking the GitHub Repository
+## Forking the GitHub Repository
 
-## **Planning Stage**
+### **Planning Stage**
 The planning was as follows
   1. Select a project.
   2. Create user stories and dev tasks using Github Kanban board.
@@ -42,8 +69,6 @@ While some variations can be visible in end product, we believe planning helped 
 
 #### Objectives
 
-
-#### Target Audience
 
 
 ### Color Pallette
